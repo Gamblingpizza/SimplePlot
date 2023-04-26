@@ -16,7 +16,6 @@
 #'
 #' @export
 time_series <- function(x, y = NULL, xlab = "Time", ylab = "Value", main = "Time Series Plot", type = "l", col = "blue") {
-
   # Convert x and y to data frames if they are vectors
   if (is.vector(x)) {
     x <- data.frame(x = x)
@@ -24,15 +23,12 @@ time_series <- function(x, y = NULL, xlab = "Time", ylab = "Value", main = "Time
   if (!is.null(y) && is.vector(y)) {
     y <- data.frame(y = y)
   }
-
   # Combine x and y into a single data frame
   if (!is.null(y)) {
     data <- cbind(x, y)
   } else {
     data <- x
   }
-
   # Create the plot
   plot(data, type = type, col = col, xlab = xlab, ylab = ylab, main = main)
-
 }
