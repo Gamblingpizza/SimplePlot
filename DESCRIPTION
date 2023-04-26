@@ -1,0 +1,9 @@
+Package: simpleplot
+Title: Package for basic plotting of data
+Version: 0.0.0.9000
+Authors: Garrison, Cody
+Description: There are three different things this package lets you do, the first function hist is to create a histogram of a dataset.  The second creates a time-series plot for a vector or dataframe and the last function t_test also perform a t-test on two sets of values and returns the p-value, degrees of freedom and the t-statistic.
+License: `use_mit_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
