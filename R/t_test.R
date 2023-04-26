@@ -21,8 +21,11 @@
 t_test <- function(x, y) {
   result <- t.test(x, y)
   list(
+    #gets the t value
     t = result$statistic,
+    #get the degrees of freedom
     df = result$parameter,
+    #calculate the p-value
     p.value = result$p.value
   )
 }
