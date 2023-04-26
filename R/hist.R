@@ -11,6 +11,7 @@
 #' data <- rnorm(100)
 #' histogram(data)
 histogram <- function(data, xlab="Values", ylab="Frequency", main="Histogram of Data") {
+  #creates a histogram with given data
   hist(data, xlab=xlab, ylab=ylab, main=main)
 }
 
